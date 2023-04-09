@@ -1,0 +1,95 @@
+:root {
+  --background-color-container-unit: #6943ff;
+  --background-color-container: #1f2937;
+  --bacground-color-conversion-result-item: #273549;
+  /*font*/
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+//*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* STYLES CSS*/
+main {
+  max-width: 34.375rem;
+  margin: 0 auto;
+}
+
+.container-unit {
+  background-color: var(--background-color-container-unit);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-conversion-title {
+  font-weight: 800;
+  font-size: 1.75rem;
+  color: #fff;
+  margin: 2rem 3.2rem;
+}
+
+.unit-conversion-number {
+}
+#number {
+  font-size: 3.625rem;
+}
+
+.container-conversion-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-conversion-btn {
+  padding: 1rem 2.5rem;
+  margin-bottom: 2rem;
+}
