@@ -55,6 +55,7 @@ h6 {
 }
 
 /* STYLES CSS*/
+
 main {
   max-width: 34.375rem;
   margin: 0 auto;
@@ -78,8 +79,14 @@ main {
 
 .unit-conversion-number {
 }
-#number {
+#input-el {
   font-size: 3.625rem;
+  max-width: 10rem;
+}
+
+.unit-conversion-btn {
+  padding: 1rem 2.5rem;
+  margin: 2rem;
 }
 
 .container-conversion-result {
@@ -87,9 +94,4 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.unit-conversion-btn {
-  padding: 1rem 2.5rem;
-  margin-bottom: 2rem;
 }

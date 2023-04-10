@@ -12,7 +12,7 @@
       <div class="container-unit">
         <h1 class="unit-conversion-title">Metric/Imperial Unit Conversion</h1>
         <div class="unit-conversion-number">
-          <p id="number">0</p>
+          <input type="number" id="input-el" min="0" />
         </div>
         <button id="convert-btn" class="unit-conversion-btn">Convert</button>
       </div>
@@ -20,8 +20,8 @@
       <div class="container-conversion-result">
         <div class="conversion-result-item">
           <h3 class="conversion-result-title">Length(Meter/Feet)</h3>
-          <p class="conversion-result-value">
-            20 meters = 65.616 feet | 20 feet = 6.096 meters
+          <p class="conversion-result-value" id="conversion-meters-feet">
+            meters = "" feet | feet = "" meters
           </p>
         </div>
         <div class="conversion-result-item">
