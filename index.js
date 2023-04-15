@@ -4,17 +4,23 @@
 1 kilogram = 2.204 pound
 */
 
-let number = "";
+let number;
 
 const convertBtn = document.getElementById("convert-btn");
 const inputEl = document.getElementById("input-el");
 const meterFeetNumber = document.getElementById("conversion-meters-feet");
-console.log(meterFeetNumber);
+
+function formulaMeterToFeet(value) {
+  return value * 3.281;
+}
+function formulafeetToMeter(value) {
+  return value / 3.281;
+}
 
 convertBtn.addEventListener("click", function () {
   number = inputEl.value;
-  const calculationMeterFeet = number * 3.281;
-  const calculationFeetMeter = number / 3.281;
+  const calculationMeterFeet = formulaMeterToFeet(number);
+  const calculationFeetMeter = formulafeetToMeter(number);
   meterFeetNumber.innerHTML = `<p>
       ${number} meters = ${calculationMeterFeet} feet | ${number} feet = ${calculationFeetMeter} meters
     </p>`;
